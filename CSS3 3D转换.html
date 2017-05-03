@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 20px;
+			}
+			
+			/*rotateX()
+			rotateY()*/
+			
+			.test1 {
+				transform: rotateX(50deg);
+				-ms-transform: rotateX(50deg);		/* IE 9 */
+				-webkit-transform: rotateX(50deg);	/* Safari and Chrome */
+						/* Opera */
+				-moz-transform: rotateX(50deg);		/* Firefox */
+			}
+			.test2 {
+				transform: rotateY(50deg);
+				-ms-transform: rotateY(50deg);		/* IE 9 */
+				-webkit-transform: rotateY(50deg);	/* Safari and Chrome */
+						/* Opera */
+				-moz-transform: rotateY(50deg);		/* Firefox */
+			}
+			/*rotate3d 组合使用，省略*/
+		</style>
+	</head>
+	<body>
+		<div class="box test1">
+			内容内容内容内容内容内容
+		</div>
+		<div class="box test2">
+			内容内容内容内容内容内容
+		</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 20px;
+			}
+			.test1 {
+				border-radius: 4px;
+				-moz-border-radius: 4px;
+			}
+			.test2 {
+				box-shadow: 10px 10px 5px blue;
+			}
+			.test3 {
+				width: 300px;
+				padding: 10px;
+				border: 10px red solid;
+				border-image: url(img/border.png) 30 20 round;	/*strech repeat*/
+			}
+			.test4 {
+				background-color: inherit;
+				border: 1px red solid;
+				background-image: url(img/bg1.gif);
+				background-size: 63px 100%;
+				/*background-size: contain;*/
+				/*background-size: cover;*/
+				background-repeat: no-repeat;
+			}
+			.test5 {
+				background-color: inherit;
+				border: 20px red solid;
+				background-image: url(img/bg1.gif);
+				background-repeat: no-repeat;
+				padding: 20px;
+				
+				/**/
+				/*background-origin: border-box;*/
+				/*background-origin: padding-box;*/
+				background-origin: content-box;
+			}
+			
+			.test6 {
+				background-color: inherit;
+				border: 1px red solid;
+				padding: 10px;
+				text-shadow: 5px 5px 1px blue;
+			}
+			
+			.test7 {
+				background-color: inherit;
+				border: 1px red solid;
+				padding: 10px;
+				word-wrap: break-word;	/*长单词拆分*/
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box test1">
+		</div>
+		<div class="box test2">
+		</div>
+		<div class="box test3">
+		</div>
+		<div class="box test4">
+		</div>
+		<div class="box test5">
+			内容内容内容内容内容内容内容内容内容内容
+			内容内容内
+		</div>
+		<div class="box test6">
+			文字文字文字文字文字文字文字文字
+		</div>
+		<div class="box test7">
+			LongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLong
+		</div>
+	</body>
+</html>

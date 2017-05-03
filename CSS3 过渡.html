@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				margin: 20px;
+			}
+			
+			.test1 {
+				transition: width 2s, height 2s, transform 2s;/*过渡*/
+				-webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+			}
+			.test1:hover {
+				width: 200px;
+				height: 200px;
+				-webkit-transform: rotate(360deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box test1">
+			内容内容内容内容内容内容
+		</div>
+	</body>
+</html>
